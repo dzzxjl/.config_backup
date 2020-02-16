@@ -49,7 +49,7 @@ filetype plugin indent on " required
 
 " The NERD Tree Settings
 map <C-K> :NERDTreeToggle<CR>
-map <C-F> <C-W>h
+" map <C-F> <C-W>h
 " autocmd VimEnter * nested :NERDTreeToggle
 
 " ==========================================================
