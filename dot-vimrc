@@ -1,3 +1,8 @@
+" 设置语言环境
+set langmenu=en_US 
+let $LANG = 'en_US'
+source $VIMRUNTIME/delmenu.vim 
+source $VIMRUNTIME/menu.vim
 "  配置Vundle.vim
 set nocompatible " be iMproved, required
 filetype off " required
@@ -31,6 +36,12 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 " The NERD Tree Plutin
 Plugin 'scrooloose/nerdtree'
+" 代码补全插件
+Plugin 'honza/vim-snippets'
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'mhinz/vim-startify'
+
+
 
 " All of your Plugins must be added before the following line
 call vundle#end() " required
@@ -48,7 +59,7 @@ filetype plugin indent on " required
 " Put your non-Plugin stuff after this line
 
 " The NERD Tree Settings
-map <C-K> :NERDTreeToggle<CR>
+map tt :NERDTreeToggle<CR>
 " map <C-F> <C-W>h
 " autocmd VimEnter * nested :NERDTreeToggle
 
