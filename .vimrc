@@ -1,3 +1,62 @@
+" ===
+" === Markdown Settings
+" ===
+" Snippets
+source ~/.config/nvim/md-snippets.vim
+" auto spell
+" autocmd BufRead,BufNewFile *.md setlocal spell
+
+" make Y to copy till the end of the line
+nnoremap Y y$
+
+" Copy to system clipboard
+vnoremap Y "+y
+
+" Save & quit
+" noremap Q :q<CR>
+" noremap <C-q> :qa<CR>
+" noremap S :w<CR>
+set scrolloff=7
+let mapleader=" "
+noremap ; :
+"h Compile function
+noremap r :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+	exec "w"
+	if &filetype == 'c'
+		exec "!g++ % -o %<"
+		exec "!time ./%<"
+	elseif &filetype == 'cpp'
+		set splitbelow
+		exec "!g++ -std=c++11 % -Wall -o %<"
+		:sp
+		:res -15
+		:term ./%<
+	elseif &filetype == 'java'
+		exec "!javac %"
+		exec "!time java %<"
+	elseif &filetype == 'sh'
+		:!time bash %
+	elseif &filetype == 'python'
+		set splitbelow
+		:sp
+		:term python3 %
+	elseif &filetype == 'html'
+		silent! exec "!".g:mkdp_browser." % &"
+	elseif &filetype == 'markdown'
+		exec "MarkdownPreview"
+	elseif &filetype == 'tex'
+		silent! exec "VimtexStop"
+		silent! exec "VimtexCompile"
+	elseif &filetype == 'dart'
+		CocCommand flutter.run
+	elseif &filetype == 'go'
+		set splitbelow
+		:sp
+		:term go run %
+	endif
+endfunc
+
 " 设置语言环境
 set langmenu=en_US 
 let $LANG = 'en_US'
@@ -40,6 +99,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'honza/vim-snippets'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'mhinz/vim-startify'
+Plugin 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
+Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+
 
 
 
@@ -67,6 +129,13 @@ map tt :NERDTreeToggle<CR>
 " 基础设置
 " 参考自：https://www.ruanyifeng.com/blog/2018/09/vimrc.html
 " ==========================================================
+
+" ===
+" === vim-table-mode
+" ===
+noremap <LEADER>tm :TableModeToggle<CR>
+"let g:table_mode_disable_mappings = 1
+let g:table_mode_cell_text_object_i_map = 'k<Bar>'
 
 " inoremap键位映射
 inoremap jj <esc>
