@@ -8,9 +8,11 @@ source ~/.config_backup/md-snippets.vim
 
 " make Y to copy till the end of the line
 nnoremap Y y$
-
 " Copy to system clipboard
 vnoremap Y "+y
+" Go to home and end using capitalized directions
+noremap H ^
+noremap L $
 
 " Save & quit
 " noremap Q :q<CR>
