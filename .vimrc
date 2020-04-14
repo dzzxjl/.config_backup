@@ -1,3 +1,13 @@
+set foldmethod=marker
+
+set cmdheight=1
+" colorscheme
+" isyntax enable
+" iset background=light
+" colorscheme solarized
+" colorscheme Molokai
+
+highlight clear SignColumn
 " ===
 " === Markdown Settings
 " ===
@@ -99,11 +109,11 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'scrooloose/nerdtree'
 " 代码补全插件
 Plugin 'honza/vim-snippets'
-Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+" Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'mhinz/vim-startify'
 Plugin 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-
+Plugin 'preservim/nerdcommenter'
 
 
 
@@ -122,8 +132,10 @@ filetype plugin indent on " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+map <F4> <leader>ci <CR>
+
 " The NERD Tree Settings
-map tt :NERDTreeToggle<CR>
+map <F2> :NERDTreeToggle<CR>
 " map <C-F> <C-W>h
 " autocmd VimEnter * nested :NERDTreeToggle
 
@@ -265,7 +277,7 @@ set ignorecase
 "
 " 打开这个设置，可以在文件关闭后，操作记录保留在一个文件里面，继续存在
 " 这意味着，重新打开一个文件，可以撤销上一次编辑时的操作。撤消文件是跟原文件保存在一起的隐藏文件，文件名以.un~开头
-set undofile
+" set undofile
 
 " 设置备份文件、交换文件、操作历史文件的保存位置
 " 结尾的//表示生成的文件名带有绝对路径，路径中用%替换目录分隔符，这样可以防止文件重名

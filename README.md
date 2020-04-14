@@ -13,6 +13,7 @@
 * Filemanager
     * ranger
     * fff
+    * nnn
 * qutebrowser
 * cmatrix
     * 字符流
