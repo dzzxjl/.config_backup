@@ -4,7 +4,9 @@
 * tmux configuration file
 ## other tools
 * lazygit
-* dmenu 软件启动器
+* launcher
+    * dmenu
+    * Rofi
 * autojump
 * figlet
 * monitor
@@ -26,7 +28,7 @@
     * yum -y install ruby-devel rubygems
     * gem install  ncurses-ruby
     * tpp test.tpp
-* 
+*
 ## reference
 * [哪些命令行工具让你相见恨晚？](https://www.zhihu.com/question/41115077)
 * [有哪些命令行的软件堪称神器？](https://www.zhihu.com/question/59227720)
