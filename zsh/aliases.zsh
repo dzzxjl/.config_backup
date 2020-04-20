@@ -1,3 +1,4 @@
+alias rm='rm -i'
 alias av='source venv/bin/activate'
 alias c='clear'
 alias cdiff='colordiff'
@@ -20,7 +21,7 @@ alias ra='ranger'
 		#exit
 	#fi
 #}
-alias s='neofetch'
+# alias s='neofetch'
 alias g='onefetch'
 alias sra='sudo -E ranger'
 alias sudo='sudo -E'
