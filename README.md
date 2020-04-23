@@ -2,7 +2,9 @@
 ## basic include
 * vim configuration file
 * tmux configuration file
-## other tools
+## other CLI tools
+* Audio Visualiser
+    * Cava
 * lazygit
 * launcher
     * dmenu
