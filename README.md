@@ -16,8 +16,10 @@
     * Conky
 * Filemanager
     * ranger
-    * fff
     * nnn
+    * fff
+    * vifm 
+    * lf
 * qutebrowser
 * cmatrix
     * 字符流
