@@ -1,1 +1,2 @@
-feh --bg-scale ~/Pictures/girl.jpg
+#! /bin/sh
+feh --bg-scale ~/Pictures/girl.jpg &
