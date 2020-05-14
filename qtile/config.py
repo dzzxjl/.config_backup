@@ -24,6 +24,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import os, subprocess
+from libqtile import hook
 from libqtile.config import Key, Screen, Group, Drag, Click
 from libqtile.command import lazy
 from libqtile import layout, bar, widget
@@ -55,6 +57,7 @@ keys = [
     # Key([mod], "Return", lazy.spawn("xterm")),
     Key([mod], "Return", lazy.spawn("st")),
     Key([mod], "c", lazy.spawn("chromium")),
+    Key([mod], "b", lazy.spawn("feh --bg-scale ~/Pictures/girl.jpg")),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout()),
@@ -96,13 +99,15 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        bottom=bar.Bar(
+        # bottom=bar.Bar(
+        top=bar.Bar(
             [
                 widget.GroupBox(),
                 widget.TextBox("  \uf79f  ", name="default"),
                 widget.Prompt(),
                 widget.WindowName(),
                 # widget.TextBox("default config", name="default"),
+                # widget.Battery(),
                 widget.TextBox("\uf79f ", name="default"),
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
@@ -156,3 +161,8 @@ focus_on_window_activation = "smart"
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
+
+@hook.subscribe.startup_once
+def autostart():
+    home = os.path.expanduser('~/.config/qtile/autostart.sh')
+    subprocess.call([home])
