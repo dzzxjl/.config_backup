@@ -127,6 +127,7 @@ Plugin 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
 Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plugin 'preservim/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'ap/vim-css-color'
 
 
 " All of your Plugins must be added before the following line
