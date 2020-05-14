@@ -14,6 +14,7 @@ alias r='echo $RANGER_LEVEL'
 alias pu='python3 -m pudb'
 alias ra='ranger'
 alias chromium-v='chromium --proxy-server="socks5://127.0.0.1:1080"'
+alias fs='flameshot full -p ~/Pictures/Screenshots'
 # ra() {
 	#if [ -z "$RANGER_LEVEL" ]
 	#then
