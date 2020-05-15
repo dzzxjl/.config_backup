@@ -57,7 +57,7 @@ keys = [
     # Key([mod], "Return", lazy.spawn("xterm")),
     Key([mod], "Return", lazy.spawn("st")),
     Key([mod], "c", lazy.spawn("chromium")),
-    Key([mod], "b", lazy.spawn("feh --bg-scale ~/Pictures/girl.jpg")),
+    # Key([mod], "b", lazy.spawn("feh --bg-scale ~/Pictures/cheatsheet-big.png")),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout()),
