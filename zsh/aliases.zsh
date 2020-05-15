@@ -44,6 +44,12 @@ alias gm="git merge"
 alias chromium-v='chromium --proxy-server="socks5://127.0.0.1:1080"'
 alias fs='flameshot full -p ~/Pictures/Screenshots'
 
+# Usage: psfind <keywords> (RegExp supported)
+function psfind() {
+    ps aux | head -n 1
+    ps aux | grep -E $1 | grep -v grep
+}
+
 # other cw alias
 
 # alias vb='vi ~/.bashrc'
