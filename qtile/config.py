@@ -35,10 +35,14 @@ from typing import List  # noqa: F401
 mod = "mod1"
 
 keys = [
+    # # Resize
+    # Key([mod, "control"], "j", [], lazy.layout.grow_down()),
+    # Key([mod, "control"], "k", [], lazy.layout.grow_up()),
+    # Key([mod, "control"], "h", [], lazy.layout.grow_left()),
+    # Key([mod, "control"], "l", [], lazy.layout.grow_right()),
     # Switch between windows in current stack pane
     Key([mod], "k", lazy.layout.down()),
     Key([mod], "j", lazy.layout.up()),
-
     # Move windows up or down in current stack
     Key([mod, "control"], "k", lazy.layout.shuffle_down()),
     Key([mod, "control"], "j", lazy.layout.shuffle_up()),
@@ -81,6 +85,7 @@ for i in groups:
     ])
 
 layouts = [
+    layout.Bsp(border_focus='#881111', border_normal='#220000', border_width=6, margin=2),
     layout.Max(),
     layout.Stack(num_stacks=2)
 ]
@@ -102,7 +107,7 @@ screens = [
         # bottom=bar.Bar(
         top=bar.Bar(
             [
-                widget.GroupBox(),
+                widget.GroupBox(active='#FF0000', background='#9932CC'),
                 widget.TextBox("  \uf79f  ", name="default"),
                 widget.Prompt(),
                 widget.WindowName(),
