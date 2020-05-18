@@ -95,6 +95,16 @@ layouts = [
 #     fontsize=12,
 #     padding=3,
 # )
+
+##### COLORS #####
+colors = [["#282a36", "#282a36"], # panel background
+          ["#434758", "#434758"], # background for current screen tab
+          ["#ffffff", "#ffffff"], # font color for group names
+          ["#ff5555", "#ff5555"], # border line color for current tab
+          ["#8d62a9", "#8d62a9"], # border line color for other tab and odd widgets
+          ["#668bd7", "#668bd7"], # color for the even widgets
+          ["#e1acff", "#e1acff"]] # window name
+
 widget_defaults = dict(
     font='SauceCodePro Nerd Font Mono',
     fontsize=24,
@@ -108,12 +118,29 @@ screens = [
         top=bar.Bar(
             [
                 widget.GroupBox(active='#FF0000', background='#9932CC'),
+                widget.CurrentLayoutIcon(),
                 widget.TextBox("  \uf79f  ", name="default"),
                 widget.Prompt(),
                 widget.WindowName(),
                 # widget.TextBox("default config", name="default"),
                 # widget.Battery(),
                 widget.TextBox("\uf79f ", name="default"),
+		widget.CPUGraph(
+                        foreground = colors[2],
+                        background = colors[4],
+                        padding = 5
+                        ),
+		widget.Memory(
+                        foreground = colors[2],
+                        background = colors[5],
+                        padding = 5
+                        ),
+		# widget.Volume(
+                #         foreground = colors[2],
+                #         background = colors[5],
+                #         padding = 5
+                #         ),
+
                 widget.Systray(),
                 widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
             ],
