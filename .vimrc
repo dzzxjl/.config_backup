@@ -1,3 +1,7 @@
+" toggle the paste mode
+set pastetoggle=<F2>
+
+
 "remember last update or view postion"
  " Only do this part when compiled with support for autocommands
  if has("autocmd")
@@ -45,7 +49,7 @@ let mapleader=" "
 noremap ; :
 "h Compile function
 noremap r :call CompileRunGcc()<CR>
-func! CompileRunGcc()
+func! CompileRunGcc()"{{{
 	exec "w"
 	if &filetype == 'c'
 		exec "!g++ % -o %<"
@@ -79,7 +83,7 @@ func! CompileRunGcc()
 		:sp
 		:term go run %
 	endif
-endfunc
+endfunc}}}
 
 " 设置语言环境
 set langmenu=en_US 
