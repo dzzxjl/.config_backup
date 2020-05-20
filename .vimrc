@@ -1,7 +1,3 @@
-" toggle the paste mode
-set pastetoggle=<F2>
-
-
 "remember last update or view postion"
  " Only do this part when compiled with support for autocommands
  if has("autocmd")
@@ -150,6 +146,9 @@ filetype plugin indent on " required
 " Put your non-Plugin stuff after this line
 
 map <F4> <leader>ci <CR>
+
+" toggle the paste mode
+set pastetoggle=<F3>
 
 " The NERD Tree Settings
 map <F2> :NERDTreeToggle<CR>
