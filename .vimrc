@@ -221,7 +221,8 @@ set softtabstop=4
 set number
 
 " 显示光标所在的当前行的行号，其他行都为相对于该行的相对行号
-set relativenumber
+" 关闭相对行号；同时开启行号和相对行号时，取消行号 set nu! 命令失效
+" set relativenumber
 
 " 光标所在的当前行高亮
 " set cursorline
