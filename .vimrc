@@ -97,6 +97,11 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
+" Step: 
+" 0. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" 1. Launch vim and run :PluginInstall
+" 2. To install from command line: vim +PluginInstall +qall
+
 Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
@@ -124,7 +129,7 @@ Plugin 'honza/vim-snippets'
 " Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'mhinz/vim-startify'
 Plugin 'dhruvasagar/vim-table-mode', { 'on': 'TableModeToggle' }
-Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+" Plugin 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plugin 'preservim/nerdcommenter'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ap/vim-css-color'
