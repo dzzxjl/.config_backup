@@ -15,6 +15,23 @@ alias rm='rm -i'
 alias slink="ln -s"
 alias duh='du -h -d 1'
 
+# deep learning
+alias pt="cd ~/project/tutorials/beginner_source/basics"
+
+# big data
+alias f="cd /root/bigdata/flink/flink-1.11.3"$
+alias k="cd /root/bigdata/kafka/kafka_2.12-2.6.0"$
+alias rs="/root/bigdata/redis/redis-5.0.10/src/redis-cli"
+
+# NVIDIA
+# 查看GPU
+alias n="lspci | grep -i nvidia"
+alias ns="nvidia-smi"
+# 每隔0.1秒刷新一次
+alias wns="watch -n 0.1 -d nvidia-smi"
+# cu102指的是cuda版本为10.2
+alias cuda="nvcc --version"
+
 # Changing "ls" to "exa"
 # alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 # alias la='exa -a --color=always --group-directories-first'  # all files and dirs
