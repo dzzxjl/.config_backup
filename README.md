@@ -1,4 +1,25 @@
 # Command-Line Interface
+## basic linux environment(for ML/DL Software Engineer)
+```
+# vim 
+ln -s ~/.config_backup/.vimrc .vimrc
+vim ~/.vimrc
+
+# zsh
+ln -s ~/.config_backup/.bashrc .bashrc
+vim ~/.bashrc
+source ~/.bashrc
+
+# tmux
+ln -s ~/.config_backup/.tmux.conf .tmux.conf
+
+# jupyter
+pip install jupyterlab
+# 解决jupyter无法自动补齐的问题
+pip install jedi==0.17.2
+
+```
+
 ## basic include
 * vim configuration file
 * tmux configuration file
