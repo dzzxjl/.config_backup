@@ -15,6 +15,8 @@ alias rm='rm -i'
 alias slink="ln -s"
 alias duh='du -h -d 1'
 
+# linux
+alias cb="cd ~/.config_backup"
 # deep learning
 alias pt="cd ~/project/tutorials/beginner_source/basics"
 
