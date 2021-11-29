@@ -18,6 +18,9 @@ pip install jupyterlab
 # 解决jupyter无法自动补齐的问题
 pip install jedi==0.17.2
 
+jupyter notebook list
+jupyter notebook password
+
 ```
 
 ## basic include
