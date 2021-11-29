@@ -22,6 +22,15 @@ jupyter notebook list
 jupyter notebook password
 
 ```
+# 虚拟环境的管理
+```
+# anaconda
+
+# docker
+
+
+```
+
 
 ## basic include
 * vim configuration file
