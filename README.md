@@ -21,6 +21,11 @@ pip install jedi==0.17.2
 jupyter notebook list
 jupyter notebook password
 
+```
+# 虚拟环境的管理
+```
+# anaconda
+
 # docker
 # 拉取镜像
 docker pull docker_addr
@@ -29,14 +34,6 @@ docker pull docker_addr
 docker images
 # 登录镜像
 docker run -t -i ubuntu:14.04 /bin/bash 
-
-```
-# 虚拟环境的管理
-```
-# anaconda
-
-# docker
-
 
 ```
 
