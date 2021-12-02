@@ -21,6 +21,15 @@ pip install jedi==0.17.2
 jupyter notebook list
 jupyter notebook password
 
+# docker
+# 拉取镜像
+docker pull docker_addr
+
+# 列出本地主机上的镜像
+docker images
+# 登录镜像
+docker run -t -i ubuntu:14.04 /bin/bash 
+
 ```
 # 虚拟环境的管理
 ```
@@ -66,6 +75,12 @@ jupyter notebook password
     * gem install  ncurses-ruby
     * tpp test.tpp
 *
+## K8S
+* Kubernetes 
+* 自动化运维管理Docker（容器化）程序
+* 主从设备模型（Master-Slave架构）
+
+
 ## reference
 * [哪些命令行工具让你相见恨晚？](https://www.zhihu.com/question/41115077)
 * [有哪些命令行的软件堪称神器？](https://www.zhihu.com/question/59227720)
