@@ -26,13 +26,18 @@ alias k="cd /root/bigdata/kafka/kafka_2.12-2.6.0"$
 alias rs="/root/bigdata/redis/redis-5.0.10/src/redis-cli"
 
 # NVIDIA
+# 查看内存空间
+alias free="free -m"
+
 # 查看GPU
+alias vga="lspci  | grep -i vga"  # 显示接口信息
 alias n="lspci | grep -i nvidia"
-alias ns="nvidia-smi"
+alias ns="nvidia-smi"  # 查看显存使用情况
 # 每隔0.1秒刷新一次
 alias wns="watch -n 0.1 -d nvidia-smi"
 # cu102指的是cuda版本为10.2
 alias cuda="nvcc --version"
+alias cuda_version="cat /usr/local/cuda/version.txt"  # 查看cuda版本
 
 # Changing "ls" to "exa"
 # alias ls='exa -al --color=always --group-directories-first' # my preferred listing
