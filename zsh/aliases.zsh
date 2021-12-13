@@ -16,7 +16,11 @@ alias slink="ln -s"
 alias duh='du -h -d 1'
 
 # linux
+alias df="df -lh"  # 查看磁盘剩余空间
+alias free="free -m"  # 查看内存空间
 alias cb="cd ~/.config_backup"
+
+
 # deep learning
 alias pt="cd ~/project/tutorials/beginner_source/basics"
 
@@ -26,9 +30,6 @@ alias k="cd /root/bigdata/kafka/kafka_2.12-2.6.0"$
 alias rs="/root/bigdata/redis/redis-5.0.10/src/redis-cli"
 
 # NVIDIA
-# 查看内存空间
-alias free="free -m"
-
 # 查看GPU
 alias vga="lspci  | grep -i vga"  # 显示接口信息
 alias n="lspci | grep -i nvidia"
