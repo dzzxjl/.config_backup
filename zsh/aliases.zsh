@@ -40,22 +40,31 @@ alias wns="watch -n 0.1 -d nvidia-smi"
 alias cuda="nvcc --version"
 alias cuda_version="cat /usr/local/cuda/version.txt"  # 查看cuda版本
 
-# Changing "ls" to "exa"
-# alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-# alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-# alias ll='exa -l --color=always --group-directories-first'  # long format
-# alias lt='exa -aT --color=always --group-directories-first' # tree listing
+# tmux
+# https://www.ruanyifeng.com/blog/2019/10/tmux.html
+# Ctrl+b d：分离当前会话
+# Ctrl+b s：列出所有会话
+# Ctrl+b $：重命名当前会话
+alias t='tmux'
+alias ta='tmux a'
+alias tls='tmux ls'
+
+
 
 # cli-tools alias
 # alias vim='nvim'
 # alias s='neofetch'
 alias nf='neofetch'
-alias ta='tmux a'
-alias t='tmux'
 alias cs='calcurse'
 alias ra='ranger'
 alias r='echo $RANGER_LEVEL'
 alias lg='lazygit'
+
+# Changing "ls" to "exa"
+# alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+# alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+# alias ll='exa -l --color=always --group-directories-first'  # long format
+# alias lt='exa -aT --color=always --group-directories-first' # tree listing
 
 # git alias
 alias gs="git status"
