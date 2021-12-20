@@ -18,6 +18,7 @@ alias duh='du -h -d 1'
 # linux
 alias df="df -lh"  # 查看磁盘剩余空间
 alias free="free -m"  # 查看内存空间
+alias wfree='watch -n 1 -d free -m'  # 动态查看内存变化
 alias cb="cd ~/.config_backup"
 
 
