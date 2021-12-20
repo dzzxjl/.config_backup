@@ -43,9 +43,17 @@ alias cuda_version="cat /usr/local/cuda/version.txt"  # 查看cuda版本
 
 # tmux
 # https://www.ruanyifeng.com/blog/2019/10/tmux.html
-# Ctrl+b d：分离当前会话
-# Ctrl+b s：列出所有会话
-# Ctrl+b $：重命名当前会话
+# bind-key C-a
+# session 会话 
+# C-a d：分离当前会话
+# C-a s：列出所有会话
+# C-a $：重命名当前会话
+# pane 面板
+# C-a % 左右分屏
+# C-a " 上下分屏
+# C-a o 选择面板
+# C-a x 关闭面板
+
 alias t='tmux'
 alias ta='tmux a'
 alias tls='tmux ls'
