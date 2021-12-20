@@ -11,11 +11,7 @@ vim ~/.bashrc
 source ~/.bashrc
 
 # tmux
-# bind-key C-a
-# C-a d ## 离开当前会话
 ln -s ~/.config_backup/.tmux.conf .tmux.conf
-
-
 
 # jupyter
 pip install jupyterlab
