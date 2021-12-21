@@ -21,6 +21,10 @@ pip install jedi==0.17.2
 jupyter notebook list
 jupyter notebook password
 
+# 后台运行jupyter lab
+nohup jupyter notebook --allow-root --ip=X.X.X.X --port 8888 > myjupyter.log 2>&1 &
+nohup jupyter lab --allow-root --ip=X.X.X.X --port 80 > myjupyter.log 2>&1 &
+
 ```
 # 虚拟环境的管理
 ```
