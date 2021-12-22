@@ -55,6 +55,7 @@ alias cuda_version="cat /usr/local/cuda/version.txt"  # 查看cuda版本
 # C-a x 关闭面板
 
 alias t='tmux'
+alias tnml='tmux new -s ml'  # <session-name>
 alias ta='tmux a'
 alias tls='tmux ls'
 
