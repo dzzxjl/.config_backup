@@ -13,6 +13,11 @@ source ~/.bashrc
 # tmux
 ln -s ~/.config_backup/.tmux.conf .tmux.conf
 
+# PySpark
+# before install pyspark, you need install java env
+pip install pyspark
+
+
 # jupyter
 pip install jupyterlab
 # 解决jupyter无法自动补齐的问题
