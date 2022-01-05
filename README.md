@@ -14,7 +14,7 @@ source ~/.bashrc
 ln -s ~/.config_backup/.tmux.conf .tmux.conf
 
 # PySpark
-# before install pyspark, you need install java env
+# before install pyspark, you need install java env && java 1.8
 pip install pyspark
 
 
