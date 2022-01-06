@@ -31,7 +31,11 @@ jupyter notebook password
 nohup jupyter notebook --allow-root --ip=X.X.X.X --port 8888 > myjupyter.log 2>&1 &
 nohup jupyter lab --allow-root --ip=X.X.X.X --port 80 > myjupyter.log 2>&1 &
 
+# TensorBoard 需指定logs目录
+tensorboard --logdir logs/fit --host X.X.X.X
+
 ```
+
 # 虚拟环境的管理
 ```
 # anaconda
