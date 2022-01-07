@@ -33,6 +33,7 @@ nohup jupyter lab --allow-root --ip=X.X.X.X --port 80 > myjupyter.log 2>&1 &
 
 # TensorBoard 需指定logs目录
 tensorboard --logdir logs/fit --host X.X.X.X
+nohup tensorboard --logdir logs/fit --host X.X.X.X > mytensorboard.log 2>&1 &
 
 ```
 
