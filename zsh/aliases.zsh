@@ -20,7 +20,12 @@ alias slink="ln -s"
 alias duh='du -h -d 1'
 
 # linux
+alias df="df -lh"  # 查看磁盘剩余空间
+alias free="free -m"  # 查看内存空间
+alias wfree='watch -n 1 -d free -m'  # 动态查看内存变化
 alias cb="cd ~/.config_backup"
+
+
 # deep learning
 alias pt="cd ~/project/tutorials/beginner_source/basics"
 
@@ -31,29 +36,49 @@ alias rs="/root/bigdata/redis/redis-5.0.10/src/redis-cli"
 
 # NVIDIA
 # 查看GPU
+alias vga="lspci  | grep -i vga"  # 显示接口信息
 alias n="lspci | grep -i nvidia"
-alias ns="nvidia-smi"
+alias ns="nvidia-smi"  # 查看显存使用情况
 # 每隔0.1秒刷新一次
 alias wns="watch -n 0.1 -d nvidia-smi"
 # cu102指的是cuda版本为10.2
 alias cuda="nvcc --version"
+alias cuda_version="cat /usr/local/cuda/version.txt"  # 查看cuda版本
+
+# tmux
+# https://www.ruanyifeng.com/blog/2019/10/tmux.html
+# bind-key C-a
+# session 会话 
+# C-a d：分离当前会话
+# C-a s：列出所有会话
+# C-a $：重命名当前会话
+# pane 面板
+# C-a % 左右分屏
+# C-a " 上下分屏
+# C-a o 选择面板
+# C-a x 关闭面板
+
+alias t='tmux'
+alias tnml='tmux new -s ml'  # <session-name>
+alias ta='tmux a'
+alias tls='tmux ls'
+
+
+
+# cli-tools alias
+# alias vim='nvim'
+# alias s='neofetch'
+alias nf='neofetch'
+alias cs='calcurse'
+alias ra='ranger'
+alias r='echo $RANGER_LEVEL'
+alias lg='lazygit'
 
 # Changing "ls" to "exa"
 # alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 # alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 # alias ll='exa -l --color=always --group-directories-first'  # long format
 # alias lt='exa -aT --color=always --group-directories-first' # tree listing
-
-# cli-tools alias
-# alias vim='nvim'
-# alias s='neofetch'
-alias nf='neofetch'
-alias ta='tmux a'
-alias t='tmux'
-alias cs='calcurse'
-alias ra='ranger'
-alias r='echo $RANGER_LEVEL'
-alias lg='lazygit'
 
 # git alias
 alias gs="git status"

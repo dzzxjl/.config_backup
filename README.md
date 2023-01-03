@@ -13,6 +13,12 @@ source ~/.bashrc
 # tmux
 ln -s ~/.config_backup/.tmux.conf .tmux.conf
 
+# PySpark
+# before install pyspark, you need install java env
+# pyspark 3.2.0 -> java 1.8
+pip install pyspark
+
+
 # jupyter
 pip install jupyterlab
 # 解决jupyter无法自动补齐的问题
@@ -21,7 +27,18 @@ pip install jedi==0.17.2
 jupyter notebook list
 jupyter notebook password
 
+# 后台运行jupyter lab
+nohup jupyter notebook --allow-root --ip=X.X.X.X --port 8888 > myjupyter.log 2>&1 &
+nohup jupyter lab --allow-root --ip=X.X.X.X --port 80 > myjupyter.log 2>&1 &
+# 查看 jupyter 密码
+jupyter server list
+
+# TensorBoard 需指定logs目录
+tensorboard --logdir logs/fit --host X.X.X.X
+nohup tensorboard --logdir logs/fit --host X.X.X.X > mytensorboard.log 2>&1 &
+
 ```
+
 # 虚拟环境的管理
 ```
 # anaconda
