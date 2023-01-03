@@ -1,3 +1,7 @@
+# kitty
+alias kthemes="kitty +kitten themes"
+
+
 # base alias
 alias ..="cd .."
 alias ...="cd ../.."
@@ -21,8 +25,8 @@ alias cb="cd ~/.config_backup"
 alias pt="cd ~/project/tutorials/beginner_source/basics"
 
 # big data
-alias f="cd /root/bigdata/flink/flink-1.11.3"$
-alias k="cd /root/bigdata/kafka/kafka_2.12-2.6.0"$
+alias f="cd /root/bigdata/flink/flink-1.11.3"
+alias k="cd /root/bigdata/kafka/kafka_2.12-2.6.0"
 alias rs="/root/bigdata/redis/redis-5.0.10/src/redis-cli"
 
 # NVIDIA
@@ -72,10 +76,10 @@ alias chromium-v='chromium --proxy-server="socks5://127.0.0.1:1080"'
 alias fs='flameshot full -p ~/Pictures/Screenshots'
 
 # Usage: psfind <keywords> (RegExp supported)
-function psfind() {
-    ps aux | head -n 1
-    ps aux | grep -E $1 | grep -v grep
-}
+# function psfind() {
+#     ps aux | head -n 1
+#     ps aux | grep -E $1 | grep -v grep
+# }
 
 # other cw alias
 
