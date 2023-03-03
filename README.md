@@ -1,6 +1,11 @@
 # Command-Line Interface
 ## basic linux environment(for ML/DL Software Engineer)
 ```
+# file manager
+mv a_file b_file to -t c_dir
+# 可以查看当前目录下各文件、文件夹的大小，这个比较实用
+du -h --max-depth=1
+
 # vim 
 ln -s ~/.config_backup/.vimrc .vimrc
 vim ~/.vimrc
