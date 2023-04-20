@@ -6,9 +6,15 @@ mv a_file b_file to -t c_dir
 # 可以查看当前目录下各文件、文件夹的大小，这个比较实用
 du -h --max-depth=1
 
+# git
+# 生成ssh秘钥
+ssh-keygen -t rsa -C "xxx@xx.com"
+
 # vim 
 ln -s ~/.config_backup/.vimrc .vimrc
 vim ~/.vimrc
+# idea使用jj映射Esc键
+inoremap jj <Esc>
 
 # zsh
 ln -s ~/.config_backup/.bashrc .bashrc
