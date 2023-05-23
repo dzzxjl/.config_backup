@@ -53,11 +53,23 @@ nohup tensorboard --logdir logs/fit --host X.X.X.X > mytensorboard.log 2>&1 &
 # 虚拟环境的管理
 ```
 # anaconda
+# 查看已经存在的环境
+conda info -e
+conda env list
+# 创建虚拟环境，并指定python版本
+conda create -n dev python=3.8.6
+# 激活dev环境
+conda activate dev
+# 退出虚拟环境
+conda deactivate
+# 删除虚拟环境
+conda remove -n test
+# 复制虚拟环境
+conda create -n test
 
 # docker
 # 拉取镜像
 docker pull docker_addr
-
 # 列出本地主机上的镜像
 docker images
 # 登录镜像
