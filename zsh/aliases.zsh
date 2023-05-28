@@ -1,5 +1,7 @@
 # kitty
 alias kthemes="kitty +kitten themes"
+alias icat="kitty +kitten icat"
+
 
 
 # base alias
