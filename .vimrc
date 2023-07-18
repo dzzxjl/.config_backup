@@ -79,7 +79,7 @@ func! CompileRunGcc()"{{{
 		:sp
 		:term go run %
 	endif
-endfunc}}}
+endfunc"}}}
 
 " 设置语言环境
 set langmenu=en_US 
