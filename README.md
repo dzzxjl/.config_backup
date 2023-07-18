@@ -12,6 +12,8 @@ ssh-keygen -t rsa -C "xxx@xx.com"
 
 # vim 
 ln -s ~/.config_backup/.vimrc .vimrc
+# 配置需要安装 vundle 模块
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim ~/.vimrc
 # idea使用jj映射Esc键
 inoremap jj <Esc>
