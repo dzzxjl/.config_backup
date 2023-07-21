@@ -22,6 +22,7 @@ inoremap jj <Esc>
 ln -s ~/.config_backup/.bashrc .bashrc
 vim ~/.bashrc
 source ~/.bashrc
+.zshenv
 
 # tmux
 ln -s ~/.config_backup/.tmux.conf .tmux.conf

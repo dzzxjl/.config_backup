@@ -102,3 +102,5 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.config_backup/aliases.sh
 source ~/.bash_profile
+
+# [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

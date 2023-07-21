@@ -17,6 +17,7 @@ alias c='clear'
 alias n='nvidia-smi'
 
 # adding flags
+alias cp='cp -i'
 alias mv="mv -i"
 alias rm='rm -i'
 alias slink="ln -s"
