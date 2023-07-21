@@ -100,5 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.config_backup/zsh/aliases.zsh
+source ~/.config_backup/aliases.sh
 source ~/.bash_profile

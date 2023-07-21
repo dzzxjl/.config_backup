@@ -1,8 +1,9 @@
+alias cfg="vim ~/.config_backup/aliases.zsh"
+# Neovim ranger tmux lazygit
+#
 # kitty
 alias kthemes="kitty +kitten themes"
 alias icat="kitty +kitten icat"
-
-
 
 # base alias
 alias ..="cd .."
@@ -26,7 +27,6 @@ alias df="df -lh"  # 查看磁盘剩余空间
 alias free="free -m"  # 查看内存空间
 alias wfree='watch -n 1 -d free -m'  # 动态查看内存变化
 alias cb="cd ~/.config_backup"
-
 
 # deep learning
 alias pt="cd ~/project/tutorials/beginner_source/basics"
@@ -65,8 +65,6 @@ alias tnml='tmux new -s ml'  # <session-name>
 alias ta='tmux a'
 alias tls='tmux ls'
 
-
-
 # cli-tools alias
 # alias vim='nvim'
 # alias s='neofetch'
@@ -83,6 +81,7 @@ alias lg='lazygit'
 # alias lt='exa -aT --color=always --group-directories-first' # tree listing
 
 # git alias
+alias git='LANG=en_GB git'
 alias gs="git status"
 alias gsm="git summary"
 alias ga='git add'

@@ -11,3 +11,15 @@ MAVEN_HOME=/usr/local/apache-maven-3.9.3
 PATH=$MAVEN_HOME/bin:$PATH
 export MAVEN_HOME
 export PATH
+
+# Go env config
+export GOROOT=/usr/local/go
+export PATH=$GOROOT/bin:$PATH
+export GOPATH=$HOME/go
+
+# Go proxy
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
+
+# lazygit
+export PATH=~/go/bin:$PATH
