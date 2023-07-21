@@ -1,4 +1,4 @@
-alias cfg="vim ~/.config_backup/aliases.zsh"
+alias cfg="vim ~/.config_backup/aliases.sh"
 # Neovim ranger tmux lazygit
 #
 # kitty
