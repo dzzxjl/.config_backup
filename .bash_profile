@@ -1,11 +1,5 @@
 # .bash_profile
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-    . /etc/bashrc
-fi
-
-
 # Java env config
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
 PATH=$JAVA_HOME/bin:$PATH:.
