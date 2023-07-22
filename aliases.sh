@@ -1,6 +1,8 @@
 alias cfg="vim ~/.config_backup/aliases.sh"
+
 # Neovim ranger tmux lazygit
-#
+# alacritty
+alias alacritty="/Applications/Alacritty.app/Contents/MacOS/alacritty -v"
 # kitty
 alias kthemes="kitty +kitten themes"
 alias icat="kitty +kitten icat"
