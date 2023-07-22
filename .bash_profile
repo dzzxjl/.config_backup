@@ -1,3 +1,11 @@
+# .bash_profile
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+
 # Java env config
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home
 PATH=$JAVA_HOME/bin:$PATH:.
@@ -27,25 +35,28 @@ export GOPROXY=https://goproxy.cn
 # lazygit
 export PATH=~/go/bin:$PATH
 
-# Other
+# CUDA
+# export LD_LIBRARY_PATH=/usr/local/cuda/lib
+# export PATH=$PATH:/usr/local/cuda/bin
+
+# Spark
 export SPARK_HOME=/Users/dzzxjl/spark/spark-2.2.0-bin-hadoop2.7
 export PATH=$SPARK_HOME/bin:$PATH
-export SCALA_HOME=/Users/dzzxjl/spark/scala-2.12.3
-export PATH=$PATH:$SCALA_HOME/bin
-
 # export PYSPARK_DRIVER_PYTHON=ipython
 export PYSPARK_DRIVER_PYTHON=python3
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
 
+# Scala
+export SCALA_HOME=/Users/dzzxjl/spark/scala-2.12.3
+export PATH=$PATH:$SCALA_HOME/bin
+
+# Homebrew
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
 
 # export LANG=zh_CN.UTF-8
 # export TERM=xterm-256color
 
 # export HISTTIMEFORMAT="%d/%m/%y %T "
-
-# export LD_LIBRARY_PATH=/usr/local/cuda/lib
-# export PATH=$PATH:/usr/local/cuda/bin
 
 # export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
