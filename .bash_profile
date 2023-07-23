@@ -36,6 +36,7 @@ export PATH=~/go/bin:$PATH
 # Spark
 export SPARK_HOME=/Users/dzzxjl/spark/spark-2.2.0-bin-hadoop2.7
 export PATH=$SPARK_HOME/bin:$PATH
+export PYSPARK_PYTHON=python3
 # export PYSPARK_DRIVER_PYTHON=ipython
 export PYSPARK_DRIVER_PYTHON=python3
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
