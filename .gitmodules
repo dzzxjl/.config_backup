@@ -1,3 +1,6 @@
-[submodule "~/.config_backup/alacritty/themes"]
-	path = ~/.config_backup/alacritty/themes
+[submodule "alacritty/themes"]
+	path = alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme
+[submodule "kitty/kitty-themes"]
+	path = kitty/kitty-themes
+	url = https://github.com/dexpota/kitty-themes.git
