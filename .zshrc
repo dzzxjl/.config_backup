@@ -100,8 +100,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.config_backup/.aliases
-source ~/.config_backup/.exports
+# Load the Variables file
+if [ -e ~/.config_backup/.zsh_files/.exports ]; then
+     source ~/.config_backup/.zsh_files/.exports
+fi
+
+# Load the Aliases file
+if [ -e ~/.config_backup/.zsh_files/.aliases ]; then
+     source ~/.config_backup/.zsh_files/.aliases
+fi
+
 # source ~/.config_backup/.bash_profile
 
 # [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
