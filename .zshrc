@@ -110,6 +110,12 @@ if [ -e ~/.config_backup/.zsh_files/.aliases ]; then
      source ~/.config_backup/.zsh_files/.aliases
 fi
 
+# Load the Functions file
+if [ -e ~/.zsh_files/functions.zsh ]; then
+     source ~/.zsh_files/functions.zsh
+fi
+
+
 # source ~/.config_backup/.bash_profile
 
 # [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
@@ -124,4 +130,20 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}git:(%{$fg[red]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/dzzxjl/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/dzzxjl/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/dzzxjl/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/dzzxjl/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
