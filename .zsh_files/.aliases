@@ -1,4 +1,5 @@
 alias cfg="vim ~/.config_backup/aliases.sh"
+alias fig="figlet"
 
 # Neovim ranger tmux lazygit
 # alacritty
