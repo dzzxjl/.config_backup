@@ -120,6 +120,13 @@ docker run -t -i ubuntu:14.04 /bin/bash
 * 自动化运维管理Docker（容器化）程序
 * 主从设备模型（Master-Slave架构）
 
+## hexo
+* 本地安装hexo
+* hexo new project
+* project 目录下安装 scaffolds 主题
+* 迁移 scource 和 scaffolds 文件夹
+* 安装 hexo-deployer-git 插件 npm install hexo-deployer-git --save
+* hexo d 部署(check git ssh 已配置完毕)
 
 ## reference
 * [哪些命令行工具让你相见恨晚？](https://www.zhihu.com/question/41115077)
