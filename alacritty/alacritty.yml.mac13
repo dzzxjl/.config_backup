@@ -878,3 +878,4 @@ font:
 
   # Print all received window events.
   #print_events: false
+  
