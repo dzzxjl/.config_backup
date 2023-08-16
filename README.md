@@ -53,7 +53,7 @@ nohup tensorboard --logdir logs/fit --host X.X.X.X > mytensorboard.log 2>&1 &
 
 ```
 
-# 虚拟环境的管理
+## 虚拟环境的管理
 ```
 # anaconda
 # 查看已经存在的环境
@@ -79,7 +79,6 @@ docker images
 docker run -t -i ubuntu:14.04 /bin/bash 
 
 ```
-
 
 ## basic include
 * vim configuration file
@@ -127,6 +126,35 @@ docker run -t -i ubuntu:14.04 /bin/bash
 * 迁移 scource 和 scaffolds 文件夹
 * 安装 hexo-deployer-git 插件 npm install hexo-deployer-git --save
 * hexo d 部署(check git ssh 已配置完毕)
+
+## chmod(Win to Mac)
+常用权限
+* -rw------- (600)      只有拥有者有读写权限。
+* -rw-r--r-- (644)      只有拥有者有读写权限；而属组用户和其他用户只有读权限。
+* -rwx------ (700)      只有拥有者有读、写、执行权限。
+* -rwxr-xr-x (755)      拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。
+* -rwx--x--x (711)      拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。
+* -rw-rw-rw- (666)      所有用户都有文件读、写权限。
+* -rwxrwxrwx (777)      所有用户都有读、写、执行权限。
+
+chmod分别设置子目录和文件不同权限
+要求就是：
+1、将当前目录中的所有“子目录”的权限设置为755；
+2、将当前目录中的所有“文件”的权限设置为644。
+
+```
+# 将当前目录下所有文件的权限设置为 rwxr-xr-x 即755 此时目录文件拥有755
+chmod -R 755 *
+# 将当前目录下所有普通文件权限设置为 rw-r--r-- 即 644 此时目录文件拥有755，普通文件拥有权限644
+chmod 644 `find . -type f`
+# 针对空格文件处理
+find . -type f -print0 | xargs -0 sudo chmod 644
+
+# 也可以用find彻底些
+# find 命令默认递归，不递归查找 -maxdepth 1
+find /path -type f -exec chmod 644 {} /;
+find /path -type d -exec chmod 755 {} /;
+```
 
 ## reference
 * [哪些命令行工具让你相见恨晚？](https://www.zhihu.com/question/41115077)
