@@ -147,7 +147,7 @@ chmod分别设置子目录和文件不同权限
 chmod -R 755 *
 # 将当前目录下所有普通文件权限设置为 rw-r--r-- 即 644 此时目录文件拥有755，普通文件拥有权限644
 chmod 644 `find . -type f`
-# 针对空格文件处理
+# 针对包含空格文件的处理，详细可参考 https://blog.csdn.net/cahesi/article/details/106083375
 find . -type f -print0 | xargs -0 sudo chmod 644
 
 # 也可以用find彻底些
