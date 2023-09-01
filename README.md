@@ -83,7 +83,9 @@ docker run -t -i ubuntu:14.04 /bin/bash
 ## basic include
 * vim configuration file
 * tmux configuration file
-## other CLI tools
+## other CLI tools(Applications in terminal / console_toolkit / command line tools)
+* CLI 只是一个对于底层功能的接口，而并不是程序或者系统的全部
+* neofetch/screenfetch/pfetch
 * Audio Visualiser
     * Cava
 * lazygit
@@ -113,7 +115,13 @@ docker run -t -i ubuntu:14.04 /bin/bash
     * yum -y install ruby-devel rubygems
     * gem install  ncurses-ruby
     * tpp test.tpp
-*
+* wego 天气预报
+* flameshot linux截屏
+* tree
+* https://github.com/darknessomi/musicbox
+* ncmpcpp
+* tray 托盘
+
 ## K8S
 * Kubernetes 
 * 自动化运维管理Docker（容器化）程序
