@@ -1,5 +1,6 @@
 alias cfg="vim ~/.config_backup/aliases.sh"
 alias fig="figlet"
+alias week="date +%W"
 
 # Neovim ranger tmux lazygit
 # alacritty
@@ -36,9 +37,9 @@ alias cb="cd ~/.config_backup"
 alias pt="cd ~/project/tutorials/beginner_source/basics"
 
 # big data
-alias f="cd /root/bigdata/flink/flink-1.11.3"
-alias k="cd /root/bigdata/kafka/kafka_2.12-2.6.0"
-alias rs="/root/bigdata/redis/redis-5.0.10/src/redis-cli"
+alias f="cd ~/bd/flink-1.11.3"
+alias k="cd ~/bd/kafka_2.12-2.6.0"
+alias rs="~/bd/redis/redis-5.0.10/src/redis-cli"
 
 # NVIDIA
 # 查看GPU
