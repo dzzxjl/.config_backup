@@ -2400,6 +2400,6 @@ shell_integration disabled
 
 
 # BEGIN_KITTY_THEME
-# Adwaita light
+# Argonaut
 include current-theme.conf
 # END_KITTY_THEME
