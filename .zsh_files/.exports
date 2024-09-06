@@ -34,16 +34,16 @@ export PATH=~/go/bin:$PATH
 # export PATH=$PATH:/usr/local/cuda/bin
 
 # Spark
-export SPARK_HOME=/Users/dzzxjl/spark/spark-2.2.0-bin-hadoop2.7
-export PATH=$SPARK_HOME/bin:$PATH
+# export SPARK_HOME=/Users/dzzxjl/spark/spark-2.2.0-bin-hadoop2.7
+# export PATH=$SPARK_HOME/bin:$PATH
 export PYSPARK_PYTHON=python3
 # export PYSPARK_DRIVER_PYTHON=ipython
 export PYSPARK_DRIVER_PYTHON=python3
 export PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
 
 # Scala
-export SCALA_HOME=/Users/dzzxjl/spark/scala-2.12.3
-export PATH=$PATH:$SCALA_HOME/bin
+# export SCALA_HOME=/Users/dzzxjl/spark/scala-2.12.3
+# export PATH=$PATH:$SCALA_HOME/bin
 
 # Homebrew
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles

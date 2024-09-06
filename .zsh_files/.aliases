@@ -21,6 +21,9 @@ alias md="mkdir -p"
 alias c='clear'
 alias n='nvidia-smi'
 
+# maven
+alias mcp="mvn clean package"
+
 # adding flags
 alias cp='cp -i'
 alias mv="mv -i"
