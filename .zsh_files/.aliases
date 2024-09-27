@@ -23,6 +23,14 @@ alias n='nvidia-smi'
 
 # maven
 alias mcp="mvn clean package"
+alias mcpu='mvn clean package -U'
+alias mci='mvn clean install'
+alias mciu='mvn clean install -U'
+alias mcpa='mvn clean package -Papple-silicon'
+alias mcpua='mvn clean package -U -Papple-silicon'
+alias mcia='mvn clean install -Papple-silicon'
+alias mciua='mvn clean install -U -Papple-silicon'
+alias md:t='mvn dependency:tree'
 
 # adding flags
 alias cp='cp -i'
