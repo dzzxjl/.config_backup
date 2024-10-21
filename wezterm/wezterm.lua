@@ -24,5 +24,31 @@ config = {
 config.font =
   wezterm.font('JetBrains Mono', { weight = 'Bold', italic = true })
 
+-- https://github.com/wez/wezterm/issues/253
+config.keys = {
+    -- Make Option-Left equivalent to Alt-b which many line editors interpret as backward-word
+    {key="LeftArrow", mods="OPT", action=wezterm.action{SendString="\x1bb"}},
+    -- Make Option-Right equivalent to Alt-f; forward-word
+    {key="RightArrow", mods="OPT", action=wezterm.action{SendString="\x1bf"}},
+}
+
+-- https://github.com/wez/wezterm/discussions/3541
+local act = wezterm.action
+config.mouse_bindings = {
+    {
+        event = { Down = { streak = 1, button = "Right" } },
+        mods = "NONE",
+        action = wezterm.action_callback(function(window, pane)
+            local has_selection = window:get_selection_text_for_pane(pane) ~= ""
+            if has_selection then
+                window:perform_action(act.CopyTo("ClipboardAndPrimarySelection"), pane)
+                window:perform_action(act.ClearSelection, pane)
+            else
+                window:perform_action(act({ PasteFrom = "Clipboard" }), pane)
+            end
+        end),
+    },
+}
+
 -- and finally, return the configuration to wezterm
 return config
