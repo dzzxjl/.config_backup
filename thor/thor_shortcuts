@@ -1,0 +1,117 @@
+[
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/WeChat.app\/",
+    "appDisplayName" : "微信",
+    "shortcut" : "alt+w"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/QQ.app\/",
+    "appDisplayName" : "QQ",
+    "shortcut" : "alt+q"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/WezTerm.app\/",
+    "appDisplayName" : "WezTerm",
+    "shortcut" : "shift+alt+z"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Warp.app\/",
+    "appDisplayName" : "Warp",
+    "shortcut" : "shift+alt+return"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Visual%20Studio%20Code.app\/",
+    "appDisplayName" : "Visual Studio Code",
+    "shortcut" : "alt+v"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Skim.app\/",
+    "appDisplayName" : "Skim",
+    "shortcut" : "shift+alt+s"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/TencentDocs.app\/",
+    "appDisplayName" : "腾讯文档",
+    "shortcut" : "alt+s"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/PyCharm%20CE.app\/",
+    "appDisplayName" : "PyCharm CE",
+    "shortcut" : "alt+p"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/IntelliJ%20IDEA%20CE.app\/",
+    "appDisplayName" : "IntelliJ IDEA CE",
+    "shortcut" : "alt+z"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/%E8%AF%AD%E9%9B%80.app\/",
+    "appDisplayName" : "语雀",
+    "shortcut" : "alt+`"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Notion.app\/",
+    "appDisplayName" : "Notion",
+    "shortcut" : "alt+x"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Mail.app\/",
+    "appDisplayName" : "邮件",
+    "shortcut" : "shift+alt+e"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/NeteaseMusic.app\/",
+    "appDisplayName" : "网易云音乐",
+    "shortcut" : "alt+n"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/QQMusic.app\/",
+    "appDisplayName" : "QQ音乐",
+    "shortcut" : "shift+alt+q"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Hyper.app\/",
+    "appDisplayName" : "Hyper",
+    "shortcut" : "shift+alt+h"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/kitty.app\/",
+    "appDisplayName" : "kitty",
+    "shortcut" : "shift+alt+k"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Alacritty.app\/",
+    "appDisplayName" : "Alacritty",
+    "shortcut" : "shift+alt+a"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/System\/Applications\/Launchpad.app\/",
+    "appDisplayName" : "启动台",
+    "shortcut" : "shift+alt+l"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/GitHub%20Desktop.app\/",
+    "appDisplayName" : "GitHub Desktop",
+    "shortcut" : "shift+alt+g"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/flomo.app\/",
+    "appDisplayName" : "flomo",
+    "shortcut" : "alt+f"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/TickTick.app\/",
+    "appDisplayName" : "滴答清单",
+    "shortcut" : "alt+d"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Applications\/Google%20Chrome.app\/",
+    "appDisplayName" : "Google Chrome",
+    "shortcut" : "alt+c"
+  },
+  {
+    "appBundleURL" : "file:\/\/\/Users\/dzzxjl\/Applications\/Chrome%20Apps.localized\/draw.io.app\/",
+    "appDisplayName" : "draw.io",
+    "shortcut" : "alt+g"
+  }
+]
