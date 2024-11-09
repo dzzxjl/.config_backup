@@ -1,10 +1,19 @@
 # Command-Line Interface
-## Maven command
+## Java & Maven command
 ```
+# Manage multi-version of Java 
+jenv local
+jenv global
+jenv shell
 # Define
-mcp -D
+# https://docs.oracle.com/javase/tutorial/essential/environment/sysprop.html
+mcp -Dos.arch=x86_64
 # Activate Profile
-mcp -P
+# 可以使用如下命令查看当前激活的 profile：
+mvn help:active-profiles
+# 也可以使用如下命令查看所有的 profile：
+mvn help:all-profiles
+mcp -Pdev
 ```
 
 ## basic linux environment(for ML/DL Software Engineer)
