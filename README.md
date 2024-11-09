@@ -1,9 +1,11 @@
 # Command-Line Interface
 ## Maven command
+```
 # Define
 mcp -D
 # Activate Profile
 mcp -P
+```
 
 ## basic linux environment(for ML/DL Software Engineer)
 ```
