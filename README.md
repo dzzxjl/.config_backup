@@ -1,4 +1,10 @@
 # Command-Line Interface
+## Maven command
+# Define
+mcp -D
+# Activate Profile
+mcp -P
+
 ## basic linux environment(for ML/DL Software Engineer)
 ```
 # file manager
@@ -83,7 +89,7 @@ docker run -t -i ubuntu:14.04 /bin/bash
 ## basic include
 * vim configuration file
 * tmux configuration file
-## other CLI tools(Applications in terminal / console_toolkit / command line tools)
+## CLI tools(Applications in terminal / console_toolkit / command line tools)
 * CLI 只是一个对于底层功能的接口，而并不是程序或者系统的全部
 * neofetch/screenfetch/pfetch
 * Audio Visualiser
