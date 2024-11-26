@@ -32,8 +32,16 @@ ln -s ~/.config_backup/.vimrc .vimrc
 # 配置需要安装 vundle 模块
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim ~/.vimrc
-# idea使用jj映射Esc键
+# idea 使用 jj 映射 Esc 键
 inoremap jj <Esc>
+# Vim: Handle Keys -> Edit in settings.json
+// vscode 使用 jj 映射 Esc 键
+"vim.insertModeKeyBindings": [
+  {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+  }
+],
 
 # zsh
 ln -s ~/.config_backup/.bashrc .bashrc
