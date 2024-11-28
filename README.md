@@ -16,6 +16,17 @@ mvn help:all-profiles
 mcp -Pdev
 ```
 
+## IDEA File Header
+```
+# Settings -> Editor -> File and Code Templates -> Includes
+/**
+ * @Author: ${USER}
+ * @Email: 
+ * @Date: ${DATE} ${TIME}
+ * @Desc: ${description}
+ */
+```
+
 ## basic linux environment(for ML/DL Software Engineer)
 ```
 # file manager
