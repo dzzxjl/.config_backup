@@ -16,8 +16,12 @@ mvn help:all-profiles
 mcp -Pdev
 ```
 
-## IDEA File Header
+## IDEA
 ```
+# idea 使用 jj 映射 Esc 键
+inoremap jj <Esc>
+
+# File Header
 # Settings -> Editor -> File and Code Templates -> Includes
 /**
  * @Author: ${USER}
@@ -25,6 +29,23 @@ mcp -Pdev
  * @Date: ${DATE} ${TIME}
  * @Desc: ${description}
  */
+```
+
+## Visual Studio Code
+```
+# Theme: Light (Visual Studio) Visual Studio Light
+
+# Vim: Handle Keys -> Edit in settings.json
+// vscode 使用 jj 映射 Esc 键
+"vim.insertModeKeyBindings": [
+  {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+  }
+],
+
+# 开启使用快捷键触发 vim 开关
+# Keyboard Shortcuts -> Vim: Toggle Vim Mode -> Keybinding -> ctrl + option + v
 ```
 
 ## basic linux environment(for ML/DL Software Engineer)
@@ -43,16 +64,6 @@ ln -s ~/.config_backup/.vimrc .vimrc
 # 配置需要安装 vundle 模块
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim ~/.vimrc
-# idea 使用 jj 映射 Esc 键
-inoremap jj <Esc>
-# Vim: Handle Keys -> Edit in settings.json
-// vscode 使用 jj 映射 Esc 键
-"vim.insertModeKeyBindings": [
-  {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-  }
-],
 
 # zsh
 ln -s ~/.config_backup/.bashrc .bashrc
