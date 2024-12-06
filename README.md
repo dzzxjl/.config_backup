@@ -116,20 +116,13 @@ conda deactivate
 conda remove -n test
 # 复制虚拟环境
 conda create -n test
-
-# docker
-# 拉取镜像
-docker pull docker_addr
-# 列出本地主机上的镜像
-docker images
-# 登录镜像
-docker run -t -i ubuntu:14.04 /bin/bash 
-
 ```
 
 ## basic include
 * vim configuration file
 * tmux configuration file
+
+
 ## CLI tools(Applications in terminal / console_toolkit / command line tools)
 * CLI 只是一个对于底层功能的接口，而并不是程序或者系统的全部
 * neofetch/screenfetch/pfetch
@@ -173,6 +166,18 @@ docker run -t -i ubuntu:14.04 /bin/bash
 * Kubernetes 
 * 自动化运维管理Docker（容器化）程序
 * 主从设备模型（Master-Slave架构）
+### Docker
+```
+# docker
+# 拉取镜像
+docker pull docker_addr
+# 列出本地主机上的镜像
+docker images
+# 登录镜像
+docker run -t -i ubuntu:14.04 /bin/bash
+# 列出当前正在运行的容器
+docker ps
+```
 
 ## hexo
 * 本地安装hexo
