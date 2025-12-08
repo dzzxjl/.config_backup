@@ -147,3 +147,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export LESSCHARSET=utf-8
