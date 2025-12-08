@@ -208,10 +208,10 @@ set tabstop=4
 set shiftwidth=4
 
 " 由于 Tab 键在不同的编辑器缩进不一致，该设置自动将 Tab 转为空格
-set expandtab
+" set expandtab
 
 " Tab 转为多少个空格
-set softtabstop=4
+" set softtabstop=4
 
 " ========
 " 外观设置
@@ -324,7 +324,8 @@ set history=1000
 set autoread
 
 " 如果行尾有多余的空格（包括 Tab 键），该配置将让这些空格显示成可见的小方块
-set listchars=tab:»■,trail:■
+" set listchars=tab:»■,trail:■
+set listchars=tab:▸\ ,trail:·
 set list
 
 " 命令模式下，底部操作指令按下 Tab 键自动补全。
@@ -343,3 +344,5 @@ nnoremap <Right> :echomsg "Use l"<cr>
 " ========
 "
 " autocmd: http://vimcdoc.sourceforge.net/doc/autocmd.html
+" nnoremap <F5> :set number! nu!<CR>
+nmap <C-N><C-N> :set invnumber<CR>
