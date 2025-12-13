@@ -1,0 +1,18 @@
+[user]
+	name = dzzxjl
+	email = dzzxjl@gmail.com
+[core]
+	autocrlf = input
+	pager = delta
+[diff]
+	tool = meld
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+	side-by-side = true
+	line-numbers = true
+	light = true
+
+[merge]
+	conflictStyle = zdiff3
