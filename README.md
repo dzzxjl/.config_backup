@@ -66,10 +66,10 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim ~/.vimrc
 
 # zsh
-ln -s ~/.config_backup/.bashrc .bashrc
-vim ~/.bashrc
-source ~/.bashrc
-.zshenv
+ln -s ~/.config_backup/.zshrc .zshrc
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+source ~/.zshrc
 
 # tmux
 ln -s ~/.config_backup/.tmux.conf .tmux.conf
