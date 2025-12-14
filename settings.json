@@ -1,0 +1,28 @@
+{
+    "editor.mouseWheelZoom": true,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.renderWhitespace": "all",
+    "git.openRepositoryInParentFolders": "always",
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "vim.insertModeKeyBindings": [
+    
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+    ],
+    "editor.wordWrap": "on",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "files.watcherExclude": {
+      "**/.bloop": true,
+      "**/.metals": true
+    },
+    // "workbench.editor.enablePreview": false
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "editor.minimap.enabled": true
+}
