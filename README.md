@@ -2,23 +2,9 @@
 
 ## VSC / Cursor
 
-Path:
-1. ln ~/vsc/settings.json $HOME/Library/Application Support/Code/User/settings.json
-2. $HOME/Library/Application Support/Code/User/settings.json
-3. $HOME/Library/Application Support/Cursor/User/settings.json
-
-
 ```
-# Theme: Light (Visual Studio) Visual Studio Light
-
-# Vim: Handle Keys -> Edit in settings.json
-// vscode 使用 jj 映射 Esc 键
-"vim.insertModeKeyBindings": [
-  {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-  }
-],
+ln -s ~/vsc/settings.json $HOME/Library/Application Support/Cursor/User/settings.json
+ln -s ~/vsc/settings.json $HOME/Library/Application Support/Code/User/settings.json
 
 # 开启使用快捷键触发 vim 开关
 # Keyboard Shortcuts -> Vim: Toggle Vim Mode -> Keybinding -> ctrl + option + v
