@@ -1,0 +1,34 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        // "key": "ctrl+alt+v",
+        // "key": "ctrl+shift+v",
+        "key": "space v",
+        "command": "toggleVim"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+    {
+        "key": "space space",
+        "command": "workbench.action.showCommands",
+        "when": "editorTextFocus && vim.mode == 'Normal'"
+    }
+    // {
+    //     "key": "space",
+    //     "command": "workbench.action.showCommands",
+    //     "when": "editorTextFocus && vim.mode == 'Normal'"
+    // },
+
+    // {
+    //     "key": "ctrl+alt+v",
+    //     "command": "settings.cycle",
+    //     "args": {
+    //         "settings": {
+    //             "vim.enable": [true, false]
+    //         }
+    //     },
+    //     "when": "editorTextFocus"
+    // }
+]
