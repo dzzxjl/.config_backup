@@ -1,5 +1,5 @@
 {
-	// "window.commandCenter": 1,
+    // "window.commandCenter": 1,
     "editor.mouseWheelZoom": true,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
@@ -10,17 +10,16 @@
         "<C-s>": false,
         "<C-z>": false
     },
- 12 // Vim: Handle Keys -> Edit in settings.json
-    "vim.insertModeKeyBindings": [
-    
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
+    // Vim: Handle Keys -> Edit in settings.json
+    "vim.insertModeKeyBindings": [    
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      }
     ],
     "editor.wordWrap": "on",
-	// Theme: Light (Visual Studio) Visual Studio Light
-	// "workbench.colorTheme": "Visual Studio Dark - C++",
+    // Theme: Light (Visual Studio) Visual Studio Light
+    // "workbench.colorTheme": "Visual Studio Dark - C++",
     "workbench.colorTheme": "Visual Studio Dark",
     "files.watcherExclude": {
       "**/.bloop": true,
