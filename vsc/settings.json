@@ -27,5 +27,7 @@
     },
     // "workbench.editor.enablePreview": false
     "markdown.preview.doubleClickToSwitchToEditor": false,
-    "editor.minimap.enabled": true
+    "editor.minimap.enabled": true,
+    "http.proxySupport": "off",
+
 }
