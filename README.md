@@ -1,5 +1,47 @@
 # Command-Line Interface
 
+## CLI tools(Applications in terminal / console_toolkit / command line tools)
+### 实用
+* CLI 只是一个对于底层功能的接口，而并不是程序或者系统的全部
+* Filemanager
+    * ranger
+    * yazi
+    * nnn
+    * fff
+    * vifm 
+    * lf
+* tree
+* autojump
+* monitor
+    * htop/gtop
+    * Conky
+* lazygit
+
+### Linux软件生态
+* neofetch/screenfetch/pfetch
+* figlet
+* cmatrix 字符流
+* tpp
+    * 在终端上演示PPT的程序
+    * http://www.ngolde.de/tpp.html
+    * wget * tpp-1.3.1.tar.gz
+    * tar -zxvf
+    * make install
+    * yum -y install ruby-devel rubygems
+    * gem install  ncurses-ruby
+    * tpp test.tpp
+* launcher
+    * dmenu
+    * Rofi
+* flameshot linux截屏
+* Audio Visualiser
+    * Cava
+* https://github.com/darknessomi/musicbox
+* ncmpcpp
+* tray 托盘
+* wego 天气预报
+* qutebrowser
+
 ## VSC / Cursor
 
 ```
@@ -73,7 +115,6 @@ ln -s ~/.config_backup/.tmux.conf .tmux.conf
 # pyspark 3.2.0 -> java 1.8
 pip install pyspark
 
-
 # jupyter
 pip install jupyterlab
 # 解决jupyter无法自动补齐的问题
@@ -116,50 +157,11 @@ conda create -n test
 * vim configuration file
 * tmux configuration file
 
-
-## CLI tools(Applications in terminal / console_toolkit / command line tools)
-* CLI 只是一个对于底层功能的接口，而并不是程序或者系统的全部
-* neofetch/screenfetch/pfetch
-* Audio Visualiser
-    * Cava
-* lazygit
-* launcher
-    * dmenu
-    * Rofi
-* autojump
-* figlet
-* monitor
-    * htop/gtop
-    * Conky
-* Filemanager
-    * ranger
-    * nnn
-    * fff
-    * vifm 
-    * lf
-* qutebrowser
-* cmatrix
-    * 字符流
-* tpp
-    * 在终端上演示PPT的程序
-    * http://www.ngolde.de/tpp.html
-    * wget * tpp-1.3.1.tar.gz
-    * tar -zxvf
-    * make install
-    * yum -y install ruby-devel rubygems
-    * gem install  ncurses-ruby
-    * tpp test.tpp
-* wego 天气预报
-* flameshot linux截屏
-* tree
-* https://github.com/darknessomi/musicbox
-* ncmpcpp
-* tray 托盘
-
 ## K8S
 * Kubernetes 
 * 自动化运维管理Docker（容器化）程序
 * 主从设备模型（Master-Slave架构）
+
 ### Docker
 ```
 # docker
