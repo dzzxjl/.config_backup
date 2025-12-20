@@ -182,3 +182,4 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 export HOMEBREW_INSTALL_FROM_API=1
 
 alias vim="nvim"
+alias r="ssh qcloud"
