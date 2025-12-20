@@ -29,5 +29,9 @@
     "markdown.preview.doubleClickToSwitchToEditor": false,
     "editor.minimap.enabled": true,
     "http.proxySupport": "off",
+    "remote.SSH.remotePlatform": {
+      "qcloud": "linux"
+    },
+    "terminal.integrated.defaultProfile.linux": "zsh",
 
 }
