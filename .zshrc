@@ -124,6 +124,7 @@ fi
 # source ~/.config_backup/.bash_profile
 
 # [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+[[ -s /opt/homebrew/etc/profile.d/autojump.sh ]] && source /opt/homebrew/etc/profile.d/autojump.sh
 
 
 # ZSH_THEME="robbyrussell"
