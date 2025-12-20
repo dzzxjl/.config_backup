@@ -1,9 +1,13 @@
 [user]
 	name = dzzxjl
 	email = dzzxjl@gmail.com
+[pull]
+  rebase = true
 [core]
 	autocrlf = input
+  editor = vim
 	pager = delta
+  excludesfile = ~/.config_backup/.gitignore
 [diff]
 	tool = meld
 [interactive]
@@ -13,7 +17,8 @@
 	side-by-side = true
 	line-numbers = true
 	light = true
-
+[init]
+  defaultBranch = main
 [merge]
 	conflictStyle = zdiff3
 [http]

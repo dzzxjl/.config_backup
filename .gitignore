@@ -5,3 +5,13 @@
 .DS_Store
 .AppleDouble
 .LSOverride
+
+# JetBrains
+.idea
+*.iml
+
+# Visual Studio Code
+.vscode
+
+# Apache Maven
+.mvn
