@@ -1,0 +1,17 @@
+# font-family = JetBrains Mono
+# font-size = 10
+# theme = darkas
+# theme=catppuccin-latte
+# theme=Builtin Light
+# theme=tokyo-night
+theme=Everforest Light Med
+window-height=30
+window-width=110
+
+title="Oh, hello"
+window-title-font-family="MonoLisa Variable"
+
+font-family="MonoLisa Variable"
+font-size=14
+font-feature=-liga
+font-thicken=true

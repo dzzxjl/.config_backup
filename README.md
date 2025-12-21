@@ -3,6 +3,10 @@
 ## CLI tools(Applications in terminal / console_toolkit / command line tools)
 ### 实用
 * CLI 只是一个对于底层功能的接口，而并不是程序或者系统的全部
+* fzf
+* jq
+* lazygit
+* autojump
 * Filemanager
     * ranger
     * yazi
@@ -11,11 +15,9 @@
     * vifm 
     * lf
 * tree
-* autojump
 * monitor
     * htop/gtop
     * Conky
-* lazygit
 
 ### Linux软件生态
 * neofetch/screenfetch/pfetch
