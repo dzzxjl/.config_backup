@@ -34,4 +34,9 @@
     },
     "terminal.integrated.defaultProfile.linux": "zsh",
 
+    // 从第一份补充
+    "update.mode": "silentlyApplyOnQuit",
+    "window.autoDetectColorScheme": false,
+    "files.autoSave": "afterDelay"
+
 }
