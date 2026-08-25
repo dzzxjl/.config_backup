@@ -1,25 +1,79 @@
 // Place your key bindings in this file to override the defaults
 [
+    // ============================================================
+    // Vim
+    // ============================================================
+
     {
+        // 其他曾考虑过的快捷键：
         // "key": "ctrl+alt+v",
         // "key": "ctrl+shift+v",
+
+        // 当前使用 Ctrl+V 开关 Vim
         "key": "ctrl+v",
         "command": "toggleVim"
+
+        // 如果只希望在编辑器 Normal 模式下生效，可以打开下面这行：
+        // "when": "editorTextFocus && vim.mode == 'Normal'"
     },
+
+
+    // ============================================================
+    // Cursor Agent
+    // ============================================================
+
     {
         "key": "cmd+i",
         "command": "composerMode.agent"
     },
+
+
+    // ============================================================
+    // Command Palette
+    // ============================================================
+
     {
+        // Vim Normal 模式下，连续按两次 Space 打开命令面板
         "key": "space space",
         "command": "workbench.action.showCommands",
         "when": "editorTextFocus && vim.mode == 'Normal'"
-    }
+    },
+
+    // 曾考虑使用单个 Space 打开命令面板
     // {
     //     "key": "space",
     //     "command": "workbench.action.showCommands",
     //     "when": "editorTextFocus && vim.mode == 'Normal'"
     // },
+
+
+    // ============================================================
+    // Editor Font Zoom
+    // ============================================================
+
+    {
+        // 增大编辑器字体
+        "key": "cmd+=",
+        "command": "editor.action.fontZoomIn",
+        "when": "editorTextFocus"
+    },
+    {
+        // 减小编辑器字体
+        "key": "cmd+-",
+        "command": "editor.action.fontZoomOut",
+        "when": "editorTextFocus"
+    },
+    {
+        // 重置编辑器字体
+        "key": "cmd+0",
+        "command": "editor.action.fontZoomReset",
+        "when": "editorTextFocus"
+    },
+
+
+    // ============================================================
+    // Vim Enable Cycle（备用方案，目前不启用）
+    // ============================================================
 
     // {
     //     "key": "ctrl+alt+v",
