@@ -1,43 +1,120 @@
 {
+    // ============================================================
+    // 窗口与主题
+    // ============================================================
+
+    // Cursor 与 VS Code 当前共用此配置，统一使用 Visual Studio 深色主题
+    "workbench.colorTheme": "Visual Studio Dark",
+
+    // 不跟随 macOS 的浅色或深色外观自动切换主题
+    "window.autoDetectColorScheme": false,
+
+    // 原 VS Code 浅色主题；需要时可与上面的深色主题互换
+    // "workbench.colorTheme": "Light Modern",
+
+    // C/C++ 风格的 Visual Studio 深色主题；需要相应主题扩展
+    // "workbench.colorTheme": "Visual Studio Dark - C++",
+
+    // 在窗口标题栏显示命令中心
     // "window.commandCenter": 1,
+
+
+    // ============================================================
+    // 编辑器
+    // ============================================================
+
+    // 按住 Command 键并滚动鼠标滚轮时缩放编辑器字体
     "editor.mouseWheelZoom": true,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
+
+    // 显示空格、制表符等空白字符
     "editor.renderWhitespace": "all",
-    "git.openRepositoryInParentFolders": "always",
+
+    // 自动换行，避免长行超出编辑器可视区域
+    "editor.wordWrap": "on",
+
+    // 显示代码缩略图
+    "editor.minimap.enabled": true,
+
+    // 双击 Markdown 预览区域时不自动切换回编辑器
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+
+    // 禁用编辑器预览模式，使单击文件时直接固定标签页
+    // "workbench.editor.enablePreview": false,
+
+
+    // ============================================================
+    // 文件与资源管理器
+    // ============================================================
+
+    // 拖放文件时不显示确认对话框
+    "explorer.confirmDragAndDrop": false,
+
+    // 删除文件时不显示确认对话框
+    "explorer.confirmDelete": false,
+
+    // 内容发生变化后自动保存文件
+    "files.autoSave": "afterDelay",
+
+    // 文件监听器忽略 Scala Bloop 和 Metals 的生成目录
+    "files.watcherExclude": {
+        "**/.bloop": true,
+        "**/.metals": true
+    },
+
+
+    // ============================================================
+    // Vim
+    // ============================================================
+
+    // 配置 VSCodeVim 是否接管指定的 Ctrl 组合键
     "vim.handleKeys": {
+        // Ctrl+D 交由 Vim 处理
         "<C-d>": true,
+
+        // Ctrl+S 保留给编辑器的保存命令
         "<C-s>": false,
+
+        // Ctrl+Z 保留给编辑器的撤销命令
         "<C-z>": false
     },
-    // Vim: Handle Keys -> Edit in settings.json
-    "vim.insertModeKeyBindings": [    
-      {
-        "before": ["j", "j"],
-        "after": ["<Esc>"]
-      }
+
+    // 在 Vim 插入模式下连续输入 jj 时返回普通模式
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<Esc>"]
+        }
     ],
-    "editor.wordWrap": "on",
-    // Theme: Light (Visual Studio) Visual Studio Light
-    // "workbench.colorTheme": "Visual Studio Dark - C++",
-    "workbench.colorTheme": "Visual Studio Dark",
-    // "workbench.colorTheme": "Light Modern",
-    "files.watcherExclude": {
-      "**/.bloop": true,
-      "**/.metals": true
-    },
-    // "workbench.editor.enablePreview": false
-    "markdown.preview.doubleClickToSwitchToEditor": false,
-    "editor.minimap.enabled": true,
-    "http.proxySupport": "off",
+
+
+    // ============================================================
+    // Git
+    // ============================================================
+
+    // 打开目录时自动查找并打开其上级目录中的 Git 仓库
+    "git.openRepositoryInParentFolders": "always",
+
+
+    // ============================================================
+    // 远程开发与终端
+    // ============================================================
+
+    // 指定 qcloud SSH 主机使用 Linux 系统
     "remote.SSH.remotePlatform": {
-      "qcloud": "linux"
+        "qcloud": "linux"
     },
+
+    // 在 Linux 或远程 Linux 环境中默认使用 zsh 终端
     "terminal.integrated.defaultProfile.linux": "zsh",
 
-    // 从第一份补充
-    "update.mode": "silentlyApplyOnQuit",
-    "window.autoDetectColorScheme": false,
-    "files.autoSave": "afterDelay"
 
+    // ============================================================
+    // 网络与更新
+    // ============================================================
+
+    // 禁止扩展自动继承编辑器的 HTTP 代理设置
+    "http.proxySupport": "off",
+
+    // 退出应用时静默应用已经下载的更新
+    "update.mode": "silentlyApplyOnQuit"
 }

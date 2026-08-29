@@ -1,20 +1,14 @@
-// Place your key bindings in this file to override the defaults
+// Cursor 与 VS Code 当前共用此快捷键配置
 [
     // ============================================================
     // Vim
     // ============================================================
 
+    // 使用 Ctrl+V 开启或关闭 Vim 模式；需要安装 VSCodeVim 扩展
     {
-        // 其他曾考虑过的快捷键：
-        // "key": "ctrl+alt+v",
-        // "key": "ctrl+shift+v",
-
-        // 当前使用 Ctrl+V 开关 Vim
         "key": "ctrl+v",
-        "command": "toggleVim"
-
-        // 如果只希望在编辑器 Normal 模式下生效，可以打开下面这行：
-        // "when": "editorTextFocus && vim.mode == 'Normal'"
+        "command": "toggleVim",
+        "when": "editorTextFocus"
     },
 
 
@@ -22,6 +16,7 @@
     // Cursor Agent
     // ============================================================
 
+    // 使用 Command+I 打开 Cursor Agent；此命令仅在 Cursor 中生效
     {
         "key": "cmd+i",
         "command": "composerMode.agent"
@@ -29,60 +24,38 @@
 
 
     // ============================================================
-    // Command Palette
+    // 命令面板
     // ============================================================
 
+    // 在编辑器的 Vim 普通模式下连续按两次 Space 打开命令面板
     {
-        // Vim Normal 模式下，连续按两次 Space 打开命令面板
         "key": "space space",
         "command": "workbench.action.showCommands",
         "when": "editorTextFocus && vim.mode == 'Normal'"
     },
 
-    // 曾考虑使用单个 Space 打开命令面板
-    // {
-    //     "key": "space",
-    //     "command": "workbench.action.showCommands",
-    //     "when": "editorTextFocus && vim.mode == 'Normal'"
-    // },
-
-
     // ============================================================
-    // Editor Font Zoom
+    // 编辑器字体缩放
     // ============================================================
 
+    // 使用 Command+= 增大编辑器字体
     {
-        // 增大编辑器字体
         "key": "cmd+=",
         "command": "editor.action.fontZoomIn",
         "when": "editorTextFocus"
     },
+
+    // 使用 Command+- 减小编辑器字体
     {
-        // 减小编辑器字体
         "key": "cmd+-",
         "command": "editor.action.fontZoomOut",
         "when": "editorTextFocus"
     },
+
+    // 使用 Command+0 恢复编辑器默认字体大小
     {
-        // 重置编辑器字体
         "key": "cmd+0",
         "command": "editor.action.fontZoomReset",
         "when": "editorTextFocus"
-    },
-
-
-    // ============================================================
-    // Vim Enable Cycle（备用方案，目前不启用）
-    // ============================================================
-
-    // {
-    //     "key": "ctrl+alt+v",
-    //     "command": "settings.cycle",
-    //     "args": {
-    //         "settings": {
-    //             "vim.enable": [true, false]
-    //         }
-    //     },
-    //     "when": "editorTextFocus"
-    // }
+    }
 ]

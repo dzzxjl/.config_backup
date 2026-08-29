@@ -1,0 +1,61 @@
+# Cursor 与 VS Code 扩展清单
+#
+# 这是个人 dotfiles 使用的扩展清单，不是 VS Code 或 Cursor 自动加载的官方配置文件。
+# 这里不锁定扩展版本；安装时由各编辑器获取当前兼容版本。
+#
+# VS Code 官方的 .vscode/extensions.json 只用于工作区扩展推荐，
+# 并不是全局已安装扩展的同步或锁定文件。
+
+
+# ============================================================
+# Cursor 与 VS Code 通用扩展
+# ============================================================
+
+# Vim 模式
+vscodevim.vim
+
+# Python 语言支持与调试
+ms-python.python
+ms-python.debugpy
+
+# Java 语言支持与构建工具
+redhat.java
+vscjava.vscode-java-pack
+vscjava.vscode-java-debug
+vscjava.vscode-java-test
+vscjava.vscode-java-dependency
+vscjava.vscode-maven
+vscjava.vscode-gradle
+
+# C/C++ 主题
+ms-vscode.cpptools-themes
+
+# Protobuf 语言支持；用于替代已弃用的旧版扩展
+drblury.protobuf-vsc
+
+
+# ============================================================
+# Cursor 专属扩展
+# ============================================================
+
+# Cursor 的 Python 类型检查
+anysphere.cursorpyright
+
+# Cursor 的远程 SSH 与容器支持
+anysphere.remote-ssh
+anysphere.remote-containers
+
+
+# ============================================================
+# VS Code 对应扩展
+# ============================================================
+
+# VS Code 的 Python 类型检查
+ms-python.vscode-pylance
+
+# VS Code 的远程 SSH 与开发容器支持
+ms-vscode-remote.remote-ssh
+ms-vscode-remote.remote-containers
+
+# VS Code 当前已经安装的 Copilot Chat
+github.copilot-chat
