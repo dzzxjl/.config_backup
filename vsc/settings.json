@@ -21,6 +21,7 @@
     // Theme: Light (Visual Studio) Visual Studio Light
     // "workbench.colorTheme": "Visual Studio Dark - C++",
     "workbench.colorTheme": "Visual Studio Dark",
+    // "workbench.colorTheme": "Light Modern",
     "files.watcherExclude": {
       "**/.bloop": true,
       "**/.metals": true
