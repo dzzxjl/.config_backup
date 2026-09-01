@@ -14,6 +14,18 @@
 # Vim 模式
 vscodevim.vim
 
+# Git 历史、逐行作者与代码变更追踪
+eamodio.gitlens
+
+# 快速运行当前代码文件
+formulahendry.code-runner
+
+# PlantUML 编辑、预览与导出
+jebbs.plantuml
+
+# 将 SQL 关键字转换为大写
+eplak.vscode-uppercasesql
+
 # Python 语言支持与调试
 ms-python.python
 ms-python.debugpy
